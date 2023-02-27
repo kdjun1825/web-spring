@@ -2,14 +2,18 @@ package kdjspring.webspring.service;
 
 import kdjspring.webspring.domain.Member;
 import kdjspring.webspring.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
   private final MemberRepository repo;
 
+  @Autowired
   //외부에서 MemberRepository를 받아오게 하기 그러면 인스턴스가 같아짐
   public MemberService(MemberRepository repo) {
     this.repo = repo;

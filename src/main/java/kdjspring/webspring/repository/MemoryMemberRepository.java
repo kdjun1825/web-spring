@@ -1,9 +1,11 @@
 package kdjspring.webspring.repository;
 
 import kdjspring.webspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 //MemberRepository 를 가져와서 사용
 public class MemoryMemberRepository implements  MemberRepository{
 
