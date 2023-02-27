@@ -23,7 +23,8 @@ public class WebController {
     //parameter 정보 ctrl + p
     //hello-mvc?name=ㅎㅇㅎㅇ!!
     //?name=   <==Get방식 http
-    //뒤에 ㅎㅇㅎㅇ넣으면 String name 이 ㅎㅇㅎㅇ가 되고 html파일에서  key값이 name 인 것을 가져오니 ㅎㅇㅎㅇ가 온다
+    //뒤에 ㅎㅇㅎㅇ넣으면 String name 이 ㅎㅇㅎㅇ가 되고 html파일에서
+    // key값이 name 인 것을 가져오니 ㅎㅇㅎㅇ가 온다
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model) {
 
